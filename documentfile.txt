@@ -1,0 +1,4 @@
+1.We do this by mapping /home/user/website/ on the /usr/local/apache2/htdocs/ on the container. Note that you will need to use sudo or log in as root to proceed, and do not omit the forward slashes at the end of each directory.
+ docker run -dit --name tecmint-web -p 8080:80 -v /home/user/website/:/usr/local/apache2/htdocs/ httpd:2.4
+2.At this point our Apache container should be up and running.
+  docker ps
